@@ -10,7 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "now:deploy": "now",
     "now:alias": "now alias",
-    "now": "npm run now:deploy && npm run now:alias"
+    "now": "npm run now:deploy && npm run now:alias",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "keywords": [
     "micro",
@@ -26,7 +28,8 @@
   "dependencies": {
     "micro": "^7.3.3",
     "microrouter": "^2.1.0",
-    "unfurl.js": "^1.1.7"
+    "unfurl.js": "^1.1.7",
+    "@snyk/protect": "latest"
   },
   "now": {
     "name": "micro-unfurl",
@@ -34,5 +37,6 @@
       "micro-unfurl",
       "unfurl"
     ]
-  }
+  },
+  "snyk": true
 }
