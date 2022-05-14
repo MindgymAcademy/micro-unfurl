@@ -24,7 +24,7 @@
   "author": "Bram Borggreve (github:beeman twitter:beeman_nl)",
   "license": "MIT",
   "dependencies": {
-    "micro": "^7.3.3",
+    "micro": "^8.0.0",
     "microrouter": "^2.1.0",
     "unfurl.js": "^1.1.7"
   },
